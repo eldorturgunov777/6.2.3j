@@ -31,8 +31,7 @@ public class MainActivity extends AppCompatActivity {
         Button save = findViewById(R.id.save);
         text = findViewById(R.id.text);
         LoadData();
-        save.setOnClickListener(view ->
-                saveData(email.getText().toString(), password.getText().toString()));
+        save.setOnClickListener(view -> saveData(email.getText().toString(), password.getText().toString()));
     }
 
     private void saveData(String name, String password) {
